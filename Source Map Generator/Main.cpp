@@ -30,7 +30,7 @@ int main(int argc, char* argv[])
 	int* seed= new int();
 	*seed= rand();
 
-	CComplex_A myWorld(
+	CCluster_A myWorld(
 		TVertex(2560.0, 2560.0, 128.0),
 		seed,
 		settings);
@@ -44,5 +44,5 @@ int main(int argc, char* argv[])
 	Translation(v, TVertex(6.0, 6.0, 6.0));
 	v;*/
 
-	CRoom myRoom(TVertex(), TVertex(), TVertex(), "", CRoom::WALL_ALL);
+	//CRoom myRoom(TVertex(), TVertex(), TVertex(), "", CRoom::WALL_ALL);
 	}
