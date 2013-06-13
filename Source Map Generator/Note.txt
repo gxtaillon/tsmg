@@ -1,0 +1,6 @@
+Prefixes:
+	m_	- Member
+	p_	- Parameter
+	T	- Type
+	C	- Class
+	E	- Enum
