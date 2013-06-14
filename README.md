@@ -51,6 +51,8 @@ m_objects.push_back(new CRoom(
     CRoom::WALL_ALL ^ CRoom::WALL_TOP));
 ```
 
+This image demonstrate what the generated vmf file, using the above code, looks like when opened in Hammer.
+
 ![Result](/tsmg_simplea.PNG)
 
 Note: I am reading my code as I type this readme and I can say that some design choices are now mysterious to me.
