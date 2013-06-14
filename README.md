@@ -1,11 +1,9 @@
-tsmg
+Typhoon Source Map Generator
 ====
 
-Typhoon Source Map Generator
 It's an old project I did during the summer of 2011. It's unfinished but I found it in my archives and I tought maybe someone could have fun with it.
 
-What it intended to do was to provide objects to create the various parts of the VMF file format, allowing the creation of prefabs and maps by the push of a button. What has been implemented are the components of brushes and another construct I called a Room. Rooms are simply 6 brushes, one for each side. There are also unfinished experiments like the CComplex_A world type. 
-
+What it intended to do was to provide objects to create the various parts of the VMF file format, allowing the creation of prefabs and maps by the push of a button. What has been implemented are the components of brushes, along with the brushes and other constructs I called Room and World. Rooms are made from 6 brushes, one for each side while worlds provide the required attributes to create a complete map. There are also unfinished experiments like the CComplex_A world type and a demo, CCluster_A which justs spawns brushes randomly in a given area.
 Exemple:
 To create a map, derive a new type from CBaseWorld. There are 3 methods you may override in CBaseWorld, Prepare(), Create() and Finalize(). They will be called in this order when the world is generated.
 ```
