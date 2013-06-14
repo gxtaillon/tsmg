@@ -38,9 +38,9 @@ int main(int argc, char* argv[])
 		settings);
 	myWorld.Generate();
 	
-	delete seed;
 	ofstream oFile("myNewMap." + IntToString(*seed) + ".vmf");
 	myWorld.Print(oFile);
+	delete seed;
 
 	/*TVertex v(64.0, 64.0, 64.0);
 	Translation(v, TVertex(6.0, 6.0, 6.0));

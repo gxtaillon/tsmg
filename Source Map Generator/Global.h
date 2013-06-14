@@ -18,7 +18,5 @@
 TSMG_BEGIN
 TSMG_END
 
-#pragma comment(lib, "utils/utils30.lib")
-
 
 #endif

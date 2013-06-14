@@ -89,6 +89,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="Types.cpp" />
+    <ClCompile Include="utils\ClException.cpp" />
     <ClCompile Include="Worlds.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -106,9 +107,6 @@
     <ClInclude Include="utils\utils.h" />
     <ClInclude Include="Worlds.h" />
     <ClInclude Include="Worlds2.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="utils\utils30.lib" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Source Map Generator.rc" />

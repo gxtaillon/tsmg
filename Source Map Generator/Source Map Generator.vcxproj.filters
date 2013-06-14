@@ -16,6 +16,9 @@
     <Filter Include="Header Files\utils">
       <UniqueIdentifier>{b2f72c7e-dde7-4793-ac53-82e99cfeec35}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{819479f5-d7fc-49f8-8690-b3e7e95e3717}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -35,6 +38,9 @@
     </ClCompile>
     <ClCompile Include="Worlds.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ClException.cpp">
+      <Filter>Source Files\utils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -80,11 +86,6 @@
     <ClInclude Include="Worlds2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="utils\utils30.lib">
-      <Filter>Resource Files</Filter>
-    </Library>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Source Map Generator.rc">
