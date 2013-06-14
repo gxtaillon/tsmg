@@ -59,6 +59,23 @@ class CBaseWorld :
 	};
 
 
+class CSimple_A :											
+	public CBaseWorld									
+	{													
+	public:												
+		CSimple_A(											
+			const TVertex& p_size,						
+			const int* p_seed,							
+			const TWorldSettings& p_worldSettings);		
+
+		~CSimple_A();									
+
+	private:											
+		/*virtual*/ void Prepare();						
+		/*virtual*/ void Create();						
+		/*virtual*/ void Finalize();					
+		};
+
 class CCluster_A :											
 	public CBaseWorld									
 	{													

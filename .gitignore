@@ -20,3 +20,9 @@
 
 Debug/
 Release/
+
+#utilscpp
+exceptions.log
+
+#tsmg
+*.vmf

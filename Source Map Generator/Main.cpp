@@ -7,6 +7,8 @@
 #include <string>
 #include "Worlds.h"
 
+#include "utils\ClConvertion.h"
+
 #include <ctime>
 using namespace std;
 using namespace TSMG_NAME;
@@ -30,14 +32,14 @@ int main(int argc, char* argv[])
 	int* seed= new int();
 	*seed= rand();
 
-	CCluster_A myWorld(
-		TVertex(2560.0, 2560.0, 128.0),
+	CSimple_A myWorld(
+		TVertex(1024.0, 1024.0, 128.0),
 		seed,
 		settings);
 	myWorld.Generate();
 	
 	delete seed;
-	ofstream oFile("myNewMap.vmf");
+	ofstream oFile("myNewMap." + IntToString(*seed) + ".vmf");
 	myWorld.Print(oFile);
 
 	/*TVertex v(64.0, 64.0, 64.0);

@@ -88,6 +88,54 @@ void TSMG CBaseWorld::Print(
 
 
 ////////////////////
+// SIMPLE A
+////////////////////
+TSMG CSimple_A::CSimple_A(									
+	const TVertex& p_size,								
+	const int* p_seed,									
+	const TWorldSettings& p_worldSettings)				
+	: CBaseWorld(										
+		p_size,											
+		p_seed,											
+		p_worldSettings)								
+	{}													
+														
+TSMG CSimple_A::~CSimple_A()									
+	{}
+
+void TSMG CSimple_A::Prepare()
+	{}
+
+void TSMG CSimple_A::Create()
+	{		
+	// Let's be simple and wrap the map in a skybox.
+	m_objects.push_back(new CRoom(
+		TVertex(),
+		TVertex(),
+		m_size,
+		"tools/toolsskybox",
+		CRoom::WALL_ALL));
+
+	// Generate a floor near the bottom, with some walls to prevent falling
+	m_objects.push_back(new CRoom(
+		TVertex(
+			0.0,
+			0.0,
+			-m_size.z * 0.15),
+		TVertex(),
+		TVertex(
+			m_size.x * 0.9,
+			m_size.y * 0.9,
+			m_size.z * 0.15),
+		"dev/dev_measuregeneric01",
+		CRoom::WALL_ALL ^ CRoom::WALL_TOP));
+	}
+
+void TSMG CSimple_A::Finalize()
+	{}
+
+
+////////////////////
 // CLUSTER A
 ////////////////////
 TSMG CCluster_A::CCluster_A(									
