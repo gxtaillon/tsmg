@@ -8,7 +8,7 @@ What it intended to do was to provide objects to create the various parts of the
 
 Exemple:
 To create a map, derive a new type from CBaseWorld. There are 3 methods you may override in CBaseWorld, Prepare(), Create() and Finalize(). They will be called in this order when the world is generated.
-
+```
 class CSimple_A :											
 	public CBaseWorld									
 	{													
@@ -25,9 +25,9 @@ class CSimple_A :
 		/*virtual*/ void Create();						
 		/*virtual*/ void Finalize();					
 		};
-
+```
 To actually add objects to a world, push them into the world's m_objects vector. The following code creates a platform inside a slightly larger skybox centered on the origin.
-
+```
 // Let's be simple and wrap the map in a skybox.
 m_objects.push_back(new CRoom(
     TVertex(),            // point of origin (exact center)
@@ -49,7 +49,6 @@ m_objects.push_back(new CRoom(
         m_size.z * 0.15),
     "dev/dev_measuregeneric01",
     CRoom::WALL_ALL ^ CRoom::WALL_TOP));
-    
-    
+```    
 
 Note: I am reading my code as I type this readme and I can say that some design choices are now mysterious to me.
