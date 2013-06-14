@@ -49,6 +49,8 @@ m_objects.push_back(new CRoom(
         m_size.z * 0.15),
     "dev/dev_measuregeneric01",
     CRoom::WALL_ALL ^ CRoom::WALL_TOP));
-```    
+```
+
+![Result](/tsmg_simplea.PNG)
 
 Note: I am reading my code as I type this readme and I can say that some design choices are now mysterious to me.
