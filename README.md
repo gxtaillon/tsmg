@@ -51,6 +51,10 @@ m_objects.push_back(new CRoom(
 
 This image demonstrate what the generated vmf file, using the above code, looks like when opened in Hammer.
 
-![Result](/tsmg_simplea.PNG)
+![CSimple_A](/tsmg_simplea.PNG)
+
+And this is the CCluster_A world type.
+
+![CCluster_A](/tsmg_clustera.PNG)
 
 Note: I am reading my code as I type this readme and I can say that some design choices are now mysterious to me.
